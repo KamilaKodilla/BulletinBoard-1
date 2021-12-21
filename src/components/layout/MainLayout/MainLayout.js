@@ -8,10 +8,16 @@ import clsx from 'clsx';
 
 import styles from './MainLayout.module.scss';
 
+import { Header } from '../Header/Header';
+import { Switcher } from '../../common/Switcher/Switcher';
+
 const Component = ({className, children}) => (
   <div className={clsx(className, styles.root)}>
-    <h2>MainLayout</h2>
-    {children}
+    <div className={styles.container}>
+      <Switcher className={styles.switcher} />
+      <Header className={styles.header} />
+      {children}
+    </div>
   </div>
 );
 

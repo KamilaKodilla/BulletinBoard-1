@@ -1,10 +1,10 @@
 /*import React from 'react';
 import { shallow } from 'enzyme';
-import { HomepageComponent } from './Homepage';
+import { SwitcherComponent } from './Switcher';
 
-describe('Component Homepage', () => {
+describe('Component Switcher', () => {
   it('should render without crashing', () => {
-    const component = shallow(<HomepageComponent />);
+    const component = shallow(<SwitcherComponent />);
     expect(component).toBeTruthy();
   });
 });
